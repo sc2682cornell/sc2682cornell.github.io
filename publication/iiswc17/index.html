@@ -34,11 +34,11 @@
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/apple-touch-icon.png">
 
-  <link rel="canonical" href="https://sc2682cornell.github.io/publication/sort/">
+  <link rel="canonical" href="https://sc2682cornell.github.io/publication/iiswc17/">
 
   
 
-  <title>A Study of Sorting Algorithms on Approximate Memory | Welcome to Shuang Chen&#39;s Homepage :)</title>
+  <title>Workload Characterization of Interactive Cloud Services on Big and Small Server Platforms | Welcome to Shuang Chen&#39;s Homepage :)</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71">
@@ -135,10 +135,10 @@
   
 
   <div class="container pub-title">
-    <h1 itemprop="name">A Study of Sorting Algorithms on Approximate Memory</h1>
+    <h1 itemprop="name">Workload Characterization of Interactive Cloud Services on Big and Small Server Platforms</h1>
     <span class="pub-authors" itemprop="author">
       
-      Shuang Chen, Shunning Jiang, Bingsheng He, Xueyan Tang
+      Shuang Chen, Shay GalOn, Christina Delimitrou, Srilatha Manne, José F. Martínez
       
     </span>
     <span class="pull-right">
@@ -147,35 +147,35 @@
   <ul class="share">
     <li>
       <a class="facebook"
-         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fsc2682cornell.github.io%2fpublication%2fsort%2f"
+         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fsc2682cornell.github.io%2fpublication%2fiiswc17%2f"
          target="_blank">
         <i class="fa fa-facebook"></i>
       </a>
     </li>
     <li>
       <a class="twitter"
-         href="https://twitter.com/intent/tweet?text=A%20Study%20of%20Sorting%20Algorithms%20on%20Approximate%20Memory&amp;url=https%3a%2f%2fsc2682cornell.github.io%2fpublication%2fsort%2f"
+         href="https://twitter.com/intent/tweet?text=Workload%20Characterization%20of%20Interactive%20Cloud%20Services%20on%20Big%20and%20Small%20Server%20Platforms&amp;url=https%3a%2f%2fsc2682cornell.github.io%2fpublication%2fiiswc17%2f"
          target="_blank">
         <i class="fa fa-twitter"></i>
       </a>
     </li>
     <li>
       <a class="linkedin"
-         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fsc2682cornell.github.io%2fpublication%2fsort%2f&amp;title=A%20Study%20of%20Sorting%20Algorithms%20on%20Approximate%20Memory"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fsc2682cornell.github.io%2fpublication%2fiiswc17%2f&amp;title=Workload%20Characterization%20of%20Interactive%20Cloud%20Services%20on%20Big%20and%20Small%20Server%20Platforms"
          target="_blank">
         <i class="fa fa-linkedin"></i>
       </a>
     </li>
     <li>
       <a class="weibo"
-         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fsc2682cornell.github.io%2fpublication%2fsort%2f&amp;title=A%20Study%20of%20Sorting%20Algorithms%20on%20Approximate%20Memory"
+         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fsc2682cornell.github.io%2fpublication%2fiiswc17%2f&amp;title=Workload%20Characterization%20of%20Interactive%20Cloud%20Services%20on%20Big%20and%20Small%20Server%20Platforms"
          target="_blank">
         <i class="fa fa-weibo"></i>
       </a>
     </li>
     <li>
       <a class="email"
-         href="mailto:?subject=A%20Study%20of%20Sorting%20Algorithms%20on%20Approximate%20Memory&amp;body=https%3a%2f%2fsc2682cornell.github.io%2fpublication%2fsort%2f">
+         href="mailto:?subject=Workload%20Characterization%20of%20Interactive%20Cloud%20Services%20on%20Big%20and%20Small%20Server%20Platforms&amp;body=https%3a%2f%2fsc2682cornell.github.io%2fpublication%2fiiswc17%2f">
         <i class="fa fa-envelope"></i>
       </a>
     </li>
@@ -192,7 +192,7 @@
   
 
   <h3>Abstract</h3>
-  <p class="pub-abstract" itemprop="text">Hardware evolution has been one of the driving factors for the redesign of database systems. Recently, approximate storage emerges in the area of computer architecture. It trades off precision for better performance and/or energy consumption. Previous studies have demonstrated the benefits of approximate storage for applications that are tolerant to imprecision such as image processing. However, it is still an open question whether and how approximate storage can be used for applications that do not expose such intrinsic tolerance. In this paper, we study one of the most basic operations in database--sorting on a hybrid storage system with both precise storage and approximate storage. Particularly, we start with a study of three common sorting algorithms on approximate storage. Experimental results show that a 95% sorted sequence can be obtained with up to 40% reduction in total write latencies. Thus, we propose an approx-refine execution mechanism to improve the performance of sorting algorithms on the hybrid storage system to produce precise results. Our optimization gains the performance benefits by offloading the sorting operation to approximate storage, followed by an efficient refinement to resolve the unsortedness on the output of the approximate storage. Our experiments show that our approx-refine can reduce the total memory access time by up to 11%. These studies shed light on the potential of approximate hardware for improving the performance of applications that require precise results.</p>
+  <p class="pub-abstract" itemprop="text">Key-value stores (e.g., Memcached) and web servers (e.g., NGINX) are widely used by cloud providers. As interactive services, they have strict service-level objectives, with typical 99th-percentile tail latencies on the order of a few milliseconds. Unlike average latency, tail latency is more sensitive to changes in usage load and traffic patterns, system configurations, and resource availability. Understanding the sensitivity of tail latency to application and system factors is critical to efficiently design and manage systems for these latency-critical services. We present a comprehensive study of the impact a diverse set of application, hardware, and isolation configurations have on tail latency for two representative interactive services, Memcached and NGINX. Examined factors include input load, thread-level parallelism, request size, virtualization, and resource partitioning. We conduct this study on two server platforms with significant differences in terms of architecture and price points: an Intel Xeon and an ARM-based Cavium ThunderX server. Experimental results show that latency on both platforms is subject to changes of several orders of magnitude depending on application and system settings, with Cavium ThunderX being more sensitive to configuration parameters. </p>
 
   
   <div class="row">
@@ -219,7 +219,7 @@
     <div class="col-sm-10">
       <div class="row">
         <div class="col-xs-12 col-sm-3 pub-row-heading">Publication</div>
-        <div class="col-xs-12 col-sm-9">in <em>the 2016 ACM International Conference on Management of Data</em></div>
+        <div class="col-xs-12 col-sm-9">in <em>the 2017 IEEE International Symposium on Workload Characterization</em></div>
       </div>
     </div>
     <div class="col-sm-1"></div>
@@ -232,7 +232,7 @@
       <div class="row">
         <div class="col-xs-12 col-sm-3 pub-row-heading">Date</div>
         <div class="col-xs-12 col-sm-9" itemprop="datePublished">
-          February, 2017
+          January, 0001
         </div>
       </div>
     </div>
@@ -252,7 +252,7 @@
 
 
 
-<a class="btn btn-primary btn-outline" href="https://sc2682cornell.github.io/pdf/sort.pdf">
+<a class="btn btn-primary btn-outline" href="https://sc2682cornell.github.io/pdf/iiswc17.pdf">
   PDF
 </a>
 
@@ -281,12 +281,12 @@
   <nav>
   <ul class="pager">
     
-    <li class="previous"><a href="https://sc2682cornell.github.io/publication/bank/"><span
-      aria-hidden="true">&larr;</span> Bank stealing for conflict mitigation in GPGPU Register File</a></li>
+    <li class="previous"><a href="https://sc2682cornell.github.io/publication/sort/"><span
+      aria-hidden="true">&larr;</span> A Study of Sorting Algorithms on Approximate Memory</a></li>
     
 
     
-    <li class="next"><a href="https://sc2682cornell.github.io/publication/iiswc17/">Workload Characterization of Interactive Cloud Services on Big and Small Server Platforms <span
+    <li class="next"><a href="https://sc2682cornell.github.io/publication/SWAP/">SWAP: Effective Fine-grain Management of Shared Last-level Caches with Minimum Hardware Support <span
       aria-hidden="true">&rarr;</span></a></li>
     
   </ul>
