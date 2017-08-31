@@ -7,13 +7,13 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2017 Shuang Chen</copyright>
-    <lastBuildDate>Sat, 25 Feb 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 01 Oct 2017 00:00:00 +0000</lastBuildDate>
     <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Workload Characterization of Interactive Cloud Services on Big and Small Server Platforms</title>
       <link>https://sc2682cornell.github.io/publication/iiswc17/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 01 Oct 2017 00:00:00 +0000</pubDate>
       
       <guid>https://sc2682cornell.github.io/publication/iiswc17/</guid>
       <description></description>
@@ -22,7 +22,7 @@
     <item>
       <title>SWAP: Effective Fine-grain Management of Shared Last-level Caches with Minimum Hardware Support</title>
       <link>https://sc2682cornell.github.io/publication/SWAP/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 04 Feb 2017 00:00:00 +0000</pubDate>
       
       <guid>https://sc2682cornell.github.io/publication/SWAP/</guid>
       <description></description>
