@@ -2,13 +2,15 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Publications on Welcome to Shuang Chen&#39;s Homepage :)</title>
-    <link>https://sc2682cornell.github.io/publication/index.xml</link>
+    <link>https://sc2682cornell.github.io/publication/</link>
     <description>Recent content in Publications on Welcome to Shuang Chen&#39;s Homepage :)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2017 Shuang Chen</copyright>
     <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/publication/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="https://sc2682cornell.github.io/publication/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Workload Characterization of Interactive Cloud Services on Big and Small Server Platforms</title>
@@ -21,10 +23,10 @@
     
     <item>
       <title>SWAP: Effective Fine-grain Management of Shared Last-level Caches with Minimum Hardware Support</title>
-      <link>https://sc2682cornell.github.io/publication/SWAP/</link>
+      <link>https://sc2682cornell.github.io/publication/swap/</link>
       <pubDate>Sat, 04 Feb 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://sc2682cornell.github.io/publication/SWAP/</guid>
+      <guid>https://sc2682cornell.github.io/publication/swap/</guid>
       <description></description>
     </item>
     

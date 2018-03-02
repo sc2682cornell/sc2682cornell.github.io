@@ -2,13 +2,62 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Homes on Welcome to Shuang Chen&#39;s Homepage :)</title>
-    <link>https://sc2682cornell.github.io/home/index.xml</link>
+    <link>https://sc2682cornell.github.io/home/</link>
     <description>Recent content in Homes on Welcome to Shuang Chen&#39;s Homepage :)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2017 Shuang Chen</copyright>
     <lastBuildDate>Sat, 25 Feb 2017 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/home/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="https://sc2682cornell.github.io/home/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://sc2682cornell.github.io/home/about/</link>
+      <pubDate>Sat, 25 Feb 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://sc2682cornell.github.io/home/about/</guid>
+      <description>Biography Hello, my name is 陈爽. I am a third-year Ph.D. student in the Computer Systems Lab at Cornell University, advised by Prof. José F. Martínez and Prof. Christina Delimitrou. My current research focuses on developing intelligent techniques that allow cloud systems to increase the utilization of their resources without sacrificing the quality-of-service(QoS) of online cloud computing services.</description>
+    </item>
+    
+    <item>
+      <title>Publications</title>
+      <link>https://sc2682cornell.github.io/home/publications/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://sc2682cornell.github.io/home/publications/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Experiences</title>
+      <link>https://sc2682cornell.github.io/home/experiences/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://sc2682cornell.github.io/home/experiences/</guid>
+      <description>Software Engineering Intern at Cavium Inc, Summer 2016
+ San José, CA, USA Mentor and Manager: Bobbie Manne  </description>
+    </item>
+    
+    <item>
+      <title>Teaching</title>
+      <link>https://sc2682cornell.github.io/home/teaching/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://sc2682cornell.github.io/home/teaching/</guid>
+      <description>I was a teaching assistant of the following courses:
+ ECE2400: Computer Systems Programming (Spring 2017) ECE4750/CS4420: Computer Architecture (Fall 2016)  </description>
+    </item>
+    
+    <item>
+      <title>Contact</title>
+      <link>https://sc2682cornell.github.io/home/contact/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://sc2682cornell.github.io/home/contact/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>
