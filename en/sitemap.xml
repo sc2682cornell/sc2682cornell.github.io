@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
     
     
     <url>
+    
       <loc>https://sc2682cornell.github.io/publication/iiswc17/</loc>
       <lastmod>2017-10-01T00:00:00+00:00</lastmod>
     </url>
@@ -12,7 +13,8 @@
     
     
     <url>
-      <loc>https://sc2682cornell.github.io/publication/SWAP/</loc>
+    
+      <loc>https://sc2682cornell.github.io/publication/swap/</loc>
       <lastmod>2017-02-04T00:00:00+00:00</lastmod>
     </url>
     
@@ -20,6 +22,7 @@
     
     
     <url>
+    
       <loc>https://sc2682cornell.github.io/publication/sort/</loc>
       <lastmod>2017-02-25T12:30:48-05:00</lastmod>
     </url>
@@ -28,6 +31,7 @@
     
     
     <url>
+    
       <loc>https://sc2682cornell.github.io/publication/bank/</loc>
       <lastmod>2015-07-22T00:00:00+00:00</lastmod>
     </url>
@@ -36,6 +40,7 @@
     
     
     <url>
+    
       <loc>https://sc2682cornell.github.io/tags/academic/</loc>
       <lastmod>2017-01-01T00:00:00+00:00</lastmod>
     </url>
@@ -44,6 +49,7 @@
     
     
     <url>
+    
       <loc>https://sc2682cornell.github.io/publication/</loc>
       <lastmod>2017-01-01T00:00:00+00:00</lastmod>
     </url>
@@ -52,6 +58,7 @@
     
     
     <url>
+    
       <loc>https://sc2682cornell.github.io/publication_types/1/</loc>
       <lastmod>2017-10-01T00:00:00+00:00</lastmod>
       <priority>0</priority>
@@ -60,11 +67,12 @@
   
     
     
-  
-    
-    
     <url>
-      <loc>https://sc2682cornell.github.io/publication_types/</loc>
+    
+      <xhtml:link rel="alternate" href="https://sc2682cornell.github.io/categories/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="https://sc2682cornell.github.io/zh/categories/" hreflang="zh"/>
+    
+      <loc>https://sc2682cornell.github.io/categories/</loc>
       <priority>0</priority>
     </url>
     
@@ -72,6 +80,36 @@
     
     
     <url>
+    
+      <xhtml:link rel="alternate" href="https://sc2682cornell.github.io/publication_types/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="https://sc2682cornell.github.io/zh/publication_types/" hreflang="zh"/>
+    
+      <loc>https://sc2682cornell.github.io/publication_types/</loc>
+      <lastmod>2017-10-01T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="https://sc2682cornell.github.io/tags/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="https://sc2682cornell.github.io/zh/tags/" hreflang="zh"/>
+    
+      <loc>https://sc2682cornell.github.io/tags/</loc>
+      <lastmod>2017-01-01T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="https://sc2682cornell.github.io/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="https://sc2682cornell.github.io/zh/" hreflang="zh"/>
+    
       <loc>https://sc2682cornell.github.io/</loc>
       <lastmod>2017-10-01T00:00:00+00:00</lastmod>
       <priority>0</priority>

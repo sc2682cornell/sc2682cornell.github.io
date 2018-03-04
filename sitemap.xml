@@ -41,26 +41,17 @@
     
     <url>
     
+      <loc>https://sc2682cornell.github.io/tags/academic/</loc>
+      <lastmod>2017-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>https://sc2682cornell.github.io/publication/</loc>
       <lastmod>2017-01-01T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>https://sc2682cornell.github.io/talk/</loc>
-      <lastmod>2017-01-01T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>https://sc2682cornell.github.io/post/</loc>
-      <lastmod>2017-01-01T00:00:00+08:00</lastmod>
     </url>
     
   
@@ -98,6 +89,7 @@
     <url>
     
       <loc>https://sc2682cornell.github.io/tags/</loc>
+      <lastmod>2017-01-01T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
