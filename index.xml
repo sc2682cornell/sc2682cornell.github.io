@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Welcome to Shuang Chen&#39;s Homepage on Welcome to Shuang Chen&#39;s Homepage</title>
+    <title>Welcome to Shuang Chen&#39;s Homepage :) on Welcome to Shuang Chen&#39;s Homepage :)</title>
     <link>https://sc2682cornell.github.io/</link>
-    <description>Recent content in Welcome to Shuang Chen&#39;s Homepage on Welcome to Shuang Chen&#39;s Homepage</description>
+    <description>Recent content in Welcome to Shuang Chen&#39;s Homepage :) on Welcome to Shuang Chen&#39;s Homepage :)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2018</copyright>
+    <copyright>&amp;copy; 2017 Shuang Chen</copyright>
     <lastBuildDate>Sun, 01 Oct 2017 00:00:00 +0000</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
@@ -21,17 +21,17 @@
     
     <item>
       <title>SWAP: Effective Fine-grain Management of Shared Last-level Caches with Minimum Hardware Support</title>
-      <link>https://sc2682cornell.github.io/publication/hpca17/</link>
+      <link>https://sc2682cornell.github.io/publication/swap/</link>
       <pubDate>Sat, 04 Feb 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://sc2682cornell.github.io/publication/hpca17/</guid>
+      <guid>https://sc2682cornell.github.io/publication/swap/</guid>
       <description></description>
     </item>
     
     <item>
       <title>A Study of Sorting Algorithms on Approximate Memory</title>
       <link>https://sc2682cornell.github.io/publication/sort/</link>
-      <pubDate>Wed, 29 Jun 2016 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 25 Feb 2017 12:30:48 -0500</pubDate>
       
       <guid>https://sc2682cornell.github.io/publication/sort/</guid>
       <description></description>
