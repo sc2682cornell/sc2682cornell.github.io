@@ -17,10 +17,10 @@
       
     
   
-  <meta name="description" content="Key-value stores (e.g., Memcached) and web servers (e.g., NGINX) are widely used by cloud providers. As interactive services, they have strict service-level objectives, with typical 99th-percentile tail latencies on the order of a few milliseconds. Unlike average latency, tail latency is more sensitive to changes in usage load and traffic patterns, system configurations, and resource availability. Understanding the sensitivity of tail latency to application and system factors is critical to efficiently design and manage systems for these latency-critical services. We present a comprehensive study of the impact a diverse set of application, hardware, and isolation configurations have on tail latency for two representative interactive services, Memcached and NGINX. Examined factors include input load, thread-level parallelism, request size, virtualization, and resource partitioning. We conduct this study on two server platforms with significant differences in terms of architecture and price points: an Intel Xeon and an ARM-based Cavium ThunderX server. Experimental results show that latency on both platforms is subject to changes of several orders of magnitude depending on application and system settings, with Cavium ThunderX being more sensitive to configuration parameters. ">
+  <meta name="description" content="Multi-tenancy in modern datacenters is currently limited to a single latency-critical, interactive service, running alongside one or more low-priority, best-effort jobs. This limits the efficiency gains from multi-tenancy, especially as most cloud applications progressively shift from batch jobs to services with strict latency requirements. We present PARTIES, a QoS-aware resource manager that enables an arbitrary number of interactive, latency-critical services to share a physical node without QoS violations. PARTIES leverages a set of hardware and software resource partitioning mechanisms to adjust allocations dynamically at runtime, to meet QoS of each co-scheduled workload and maximize throughput for the machine. We evaluate PARTIES on state-of-the-art server platforms across a set of diverse interactive services. Our results show that PARTIES improves throughput under QoS by 61% on average compared to existing resource managers, and that the rate of improvement increases with the number of co-scheduled applications per physical host. ">
 
   
-  <link rel="alternate" hreflang="en-us" href="https://sc2682cornell.github.io/publication/iiswc17/">
+  <link rel="alternate" hreflang="en-us" href="https://sc2682cornell.github.io/publication/parties/">
 
   
 
@@ -62,24 +62,24 @@
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="https://sc2682cornell.github.io/publication/iiswc17/">
+  <link rel="canonical" href="https://sc2682cornell.github.io/publication/parties/">
 
   <meta property="twitter:card" content="summary_large_image">
   
   <meta property="og:site_name" content="Welcome to Shuang Chen&#39;s Homepage">
-  <meta property="og:url" content="https://sc2682cornell.github.io/publication/iiswc17/">
-  <meta property="og:title" content="Workload Characterization of Interactive Cloud Services on Big and Small Server Platforms | Welcome to Shuang Chen&#39;s Homepage">
-  <meta property="og:description" content="Key-value stores (e.g., Memcached) and web servers (e.g., NGINX) are widely used by cloud providers. As interactive services, they have strict service-level objectives, with typical 99th-percentile tail latencies on the order of a few milliseconds. Unlike average latency, tail latency is more sensitive to changes in usage load and traffic patterns, system configurations, and resource availability. Understanding the sensitivity of tail latency to application and system factors is critical to efficiently design and manage systems for these latency-critical services. We present a comprehensive study of the impact a diverse set of application, hardware, and isolation configurations have on tail latency for two representative interactive services, Memcached and NGINX. Examined factors include input load, thread-level parallelism, request size, virtualization, and resource partitioning. We conduct this study on two server platforms with significant differences in terms of architecture and price points: an Intel Xeon and an ARM-based Cavium ThunderX server. Experimental results show that latency on both platforms is subject to changes of several orders of magnitude depending on application and system settings, with Cavium ThunderX being more sensitive to configuration parameters. ">
+  <meta property="og:url" content="https://sc2682cornell.github.io/publication/parties/">
+  <meta property="og:title" content="PARTIES: QoS-Aware Resource Partitioning for Multiple Interactive Services | Welcome to Shuang Chen&#39;s Homepage">
+  <meta property="og:description" content="Multi-tenancy in modern datacenters is currently limited to a single latency-critical, interactive service, running alongside one or more low-priority, best-effort jobs. This limits the efficiency gains from multi-tenancy, especially as most cloud applications progressively shift from batch jobs to services with strict latency requirements. We present PARTIES, a QoS-aware resource manager that enables an arbitrary number of interactive, latency-critical services to share a physical node without QoS violations. PARTIES leverages a set of hardware and software resource partitioning mechanisms to adjust allocations dynamically at runtime, to meet QoS of each co-scheduled workload and maximize throughput for the machine. We evaluate PARTIES on state-of-the-art server platforms across a set of diverse interactive services. Our results show that PARTIES improves throughput under QoS by 61% on average compared to existing resource managers, and that the rate of improvement increases with the number of co-scheduled applications per physical host. ">
   <meta property="og:locale" content="en-us">
   
-  <meta property="article:published_time" content="2017-10-01T00:00:00&#43;00:00">
+  <meta property="article:published_time" content="2019-01-01T00:00:00&#43;00:00">
   
-  <meta property="article:modified_time" content="2017-10-01T00:00:00&#43;00:00">
-  
-
+  <meta property="article:modified_time" content="2019-01-01T00:00:00&#43;00:00">
   
 
-  <title>Workload Characterization of Interactive Cloud Services on Big and Small Server Platforms | Welcome to Shuang Chen&#39;s Homepage</title>
+  
+
+  <title>PARTIES: QoS-Aware Resource Partitioning for Multiple Interactive Services | Welcome to Shuang Chen&#39;s Homepage</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#toc" data-offset="71" >
@@ -218,10 +218,10 @@
 
 
   <div class="article-container">
-    <h1 itemprop="name">Workload Characterization of Interactive Cloud Services on Big and Small Server Platforms</h1>
+    <h1 itemprop="name">PARTIES: QoS-Aware Resource Partitioning for Multiple Interactive Services</h1>
     <span class="pub-authors" itemprop="author">
       
-      <strong>Shuang Chen</strong>, Shay GalOn, Christina Delimitrou, Srilatha Manne, José F. Martínez
+      <strong>Shuang Chen</strong>, Christina Delimitrou, José Martínez
       
     </span>
     <span class="pull-right">
@@ -230,35 +230,35 @@
   <ul class="share">
     <li>
       <a class="twitter"
-         href="https://twitter.com/intent/tweet?text=Workload%20Characterization%20of%20Interactive%20Cloud%20Services%20on%20Big%20and%20Small%20Server%20Platforms&amp;url=https%3a%2f%2fsc2682cornell.github.io%2fpublication%2fiiswc17%2f"
+         href="https://twitter.com/intent/tweet?text=PARTIES%3a%20QoS-Aware%20Resource%20Partitioning%20for%20Multiple%20Interactive%20Services&amp;url=https%3a%2f%2fsc2682cornell.github.io%2fpublication%2fparties%2f"
          target="_blank" rel="noopener">
         <i class="fa fa-twitter"></i>
       </a>
     </li>
     <li>
       <a class="facebook"
-         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fsc2682cornell.github.io%2fpublication%2fiiswc17%2f"
+         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fsc2682cornell.github.io%2fpublication%2fparties%2f"
          target="_blank" rel="noopener">
         <i class="fa fa-facebook"></i>
       </a>
     </li>
     <li>
       <a class="linkedin"
-         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fsc2682cornell.github.io%2fpublication%2fiiswc17%2f&amp;title=Workload%20Characterization%20of%20Interactive%20Cloud%20Services%20on%20Big%20and%20Small%20Server%20Platforms"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fsc2682cornell.github.io%2fpublication%2fparties%2f&amp;title=PARTIES%3a%20QoS-Aware%20Resource%20Partitioning%20for%20Multiple%20Interactive%20Services"
          target="_blank" rel="noopener">
         <i class="fa fa-linkedin"></i>
       </a>
     </li>
     <li>
       <a class="weibo"
-         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fsc2682cornell.github.io%2fpublication%2fiiswc17%2f&amp;title=Workload%20Characterization%20of%20Interactive%20Cloud%20Services%20on%20Big%20and%20Small%20Server%20Platforms"
+         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fsc2682cornell.github.io%2fpublication%2fparties%2f&amp;title=PARTIES%3a%20QoS-Aware%20Resource%20Partitioning%20for%20Multiple%20Interactive%20Services"
          target="_blank" rel="noopener">
         <i class="fa fa-weibo"></i>
       </a>
     </li>
     <li>
       <a class="email"
-         href="mailto:?subject=Workload%20Characterization%20of%20Interactive%20Cloud%20Services%20on%20Big%20and%20Small%20Server%20Platforms&amp;body=https%3a%2f%2fsc2682cornell.github.io%2fpublication%2fiiswc17%2f">
+         href="mailto:?subject=PARTIES%3a%20QoS-Aware%20Resource%20Partitioning%20for%20Multiple%20Interactive%20Services&amp;body=https%3a%2f%2fsc2682cornell.github.io%2fpublication%2fparties%2f">
         <i class="fa fa-envelope"></i>
       </a>
     </li>
@@ -272,7 +272,7 @@
 
     
     <h3>Abstract</h3>
-    <p class="pub-abstract" itemprop="text">Key-value stores (e.g., Memcached) and web servers (e.g., NGINX) are widely used by cloud providers. As interactive services, they have strict service-level objectives, with typical 99th-percentile tail latencies on the order of a few milliseconds. Unlike average latency, tail latency is more sensitive to changes in usage load and traffic patterns, system configurations, and resource availability. Understanding the sensitivity of tail latency to application and system factors is critical to efficiently design and manage systems for these latency-critical services. We present a comprehensive study of the impact a diverse set of application, hardware, and isolation configurations have on tail latency for two representative interactive services, Memcached and NGINX. Examined factors include input load, thread-level parallelism, request size, virtualization, and resource partitioning. We conduct this study on two server platforms with significant differences in terms of architecture and price points: an Intel Xeon and an ARM-based Cavium ThunderX server. Experimental results show that latency on both platforms is subject to changes of several orders of magnitude depending on application and system settings, with Cavium ThunderX being more sensitive to configuration parameters.</p>
+    <p class="pub-abstract" itemprop="text">Multi-tenancy in modern datacenters is currently limited to a single latency-critical, interactive service, running alongside one or more low-priority, best-effort jobs. This limits the efficiency gains from multi-tenancy, especially as most cloud applications progressively shift from batch jobs to services with strict latency requirements. We present PARTIES, a QoS-aware resource manager that enables an arbitrary number of interactive, latency-critical services to share a physical node without QoS violations. PARTIES leverages a set of hardware and software resource partitioning mechanisms to adjust allocations dynamically at runtime, to meet QoS of each co-scheduled workload and maximize throughput for the machine. We evaluate PARTIES on state-of-the-art server platforms across a set of diverse interactive services. Our results show that PARTIES improves throughput under QoS by 61% on average compared to existing resource managers, and that the rate of improvement increases with the number of co-scheduled applications per physical host.</p>
     
 
     
@@ -301,7 +301,7 @@
       <div class="col-sm-10">
         <div class="row">
           <div class="col-xs-12 col-sm-3 pub-row-heading">Publication</div>
-          <div class="col-xs-12 col-sm-9">in <em>the 2017 IEEE International Symposium on Workload Characterization (IISWC 2017)</em></div>
+          <div class="col-xs-12 col-sm-9">In <em>the 24th International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS 2019)</em>, ACM.</div>
         </div>
       </div>
       <div class="col-sm-1"></div>
@@ -315,7 +315,7 @@
         <div class="row">
           <div class="col-xs-12 col-sm-3 pub-row-heading">Date</div>
           <div class="col-xs-12 col-sm-9" itemprop="datePublished">
-            October, 2017
+            January, 2019
           </div>
         </div>
       </div>
@@ -335,9 +335,6 @@
 
 
 
-<a class="btn btn-primary btn-outline" href="https://sc2682cornell.github.io/pdf/iiswc17.pdf" target="_blank" rel="noopener">
-  PDF
-</a>
 
 
 
@@ -347,11 +344,6 @@
 
 
 
-
-
-<a class="btn btn-primary btn-outline" href="https://sc2682cornell.github.io/ppt/IISWC.pdf" target="_blank" rel="noopener">
-  Slides
-</a>
 
 
 
