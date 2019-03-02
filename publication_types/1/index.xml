@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2019 Shuang Chen</copyright>
-    <lastBuildDate>Sun, 01 Oct 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 01 Mar 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://sc2682cornell.github.io/publication_types/1/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>PARTIES: QoS-Aware Resource Partitioning for Multiple Interactive Services</title>
+      <link>https://sc2682cornell.github.io/publication/parties/</link>
+      <pubDate>Fri, 01 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://sc2682cornell.github.io/publication/parties/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Workload Characterization of Interactive Cloud Services on Big and Small Server Platforms</title>
