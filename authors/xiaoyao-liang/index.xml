@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Xiaoyao Liang | Welcome to Shuang Chen&#39;s Homepage</title>
+    <link>https://sc2682cornell.github.io/authors/xiaoyao-liang/</link>
+      <atom:link href="https://sc2682cornell.github.io/authors/xiaoyao-liang/index.xml" rel="self" type="application/rss+xml" />
+    <description>Xiaoyao Liang</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 22 Jul 2015 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://sc2682cornell.github.io/img/icon-192.png</url>
+      <title>Xiaoyao Liang</title>
+      <link>https://sc2682cornell.github.io/authors/xiaoyao-liang/</link>
+    </image>
+    
+    <item>
+      <title>Bank stealing for conflict mitigation in GPGPU Register File</title>
+      <link>https://sc2682cornell.github.io/publication/bank/</link>
+      <pubDate>Wed, 22 Jul 2015 00:00:00 +0000</pubDate>
+      <guid>https://sc2682cornell.github.io/publication/bank/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,116 +1,145 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
-    
-    
-    <url>
-    
-      <loc>https://sc2682cornell.github.io/publication/parties/</loc>
-      <lastmod>2019-04-13T00:00:00+00:00</lastmod>
-    </url>
-    
+  <url>
+    <loc>https://sc2682cornell.github.io/publication/parties/</loc>
+    <lastmod>2019-04-13T00:00:00+00:00</lastmod>
+  </url>
   
-    
-    
-    <url>
-    
-      <loc>https://sc2682cornell.github.io/publication/iiswc17/</loc>
-      <lastmod>2017-10-01T00:00:00+00:00</lastmod>
-    </url>
-    
+  <url>
+    <loc>https://sc2682cornell.github.io/publication/iiswc17/</loc>
+    <lastmod>2017-10-01T00:00:00+00:00</lastmod>
+  </url>
   
-    
-    
-    <url>
-    
-      <loc>https://sc2682cornell.github.io/publication/swap/</loc>
-      <lastmod>2017-02-04T00:00:00+00:00</lastmod>
-    </url>
-    
+  <url>
+    <loc>https://sc2682cornell.github.io/publication/swap/</loc>
+    <lastmod>2017-02-04T00:00:00+00:00</lastmod>
+  </url>
   
-    
-    
-    <url>
-    
-      <loc>https://sc2682cornell.github.io/publication/sort/</loc>
-      <lastmod>2017-02-25T12:30:48-05:00</lastmod>
-    </url>
-    
+  <url>
+    <loc>https://sc2682cornell.github.io/publication/sort/</loc>
+    <lastmod>2017-02-25T12:30:48-05:00</lastmod>
+  </url>
   
-    
-    
-    <url>
-    
-      <loc>https://sc2682cornell.github.io/publication/bank/</loc>
-      <lastmod>2015-07-22T00:00:00+00:00</lastmod>
-    </url>
-    
+  <url>
+    <loc>https://sc2682cornell.github.io/publication/bank/</loc>
+    <lastmod>2015-07-22T00:00:00+00:00</lastmod>
+  </url>
   
-    
-    
-    <url>
-    
-      <loc>https://sc2682cornell.github.io/tags/academic/</loc>
-      <lastmod>2017-01-01T00:00:00+00:00</lastmod>
-    </url>
-    
+  <url>
+    <loc>https://sc2682cornell.github.io/authors/shuang-chen/</loc>
+    <lastmod>2019-04-13T00:00:00+00:00</lastmod>
+  </url>
   
-    
-    
-    <url>
-    
-      <loc>https://sc2682cornell.github.io/publication/</loc>
-      <lastmod>2017-01-01T00:00:00+00:00</lastmod>
-    </url>
-    
+  <url>
+    <loc>https://sc2682cornell.github.io/publication_types/1/</loc>
+    <lastmod>2019-04-13T00:00:00+00:00</lastmod>
+  </url>
   
-    
-    
-    <url>
-    
-      <loc>https://sc2682cornell.github.io/publication_types/1/</loc>
-      <lastmod>2019-04-13T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
+  <url>
+    <loc>https://sc2682cornell.github.io/authors/</loc>
+    <lastmod>2019-04-13T00:00:00+00:00</lastmod>
+  </url>
   
-    
-    
-    <url>
-    
-      <loc>https://sc2682cornell.github.io/categories/</loc>
-      <priority>0</priority>
-    </url>
-    
+  <url>
+    <loc>https://sc2682cornell.github.io/authors/christina-delimitrou/</loc>
+    <lastmod>2019-04-13T00:00:00+00:00</lastmod>
+  </url>
   
-    
-    
-    <url>
-    
-      <loc>https://sc2682cornell.github.io/publication_types/</loc>
-      <lastmod>2019-04-13T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
+  <url>
+    <loc>https://sc2682cornell.github.io/authors/jose-f.-martinez/</loc>
+    <lastmod>2019-04-13T00:00:00+00:00</lastmod>
+  </url>
   
-    
-    
-    <url>
-    
-      <loc>https://sc2682cornell.github.io/tags/</loc>
-      <lastmod>2017-01-01T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
+  <url>
+    <loc>https://sc2682cornell.github.io/publication_types/</loc>
+    <lastmod>2019-04-13T00:00:00+00:00</lastmod>
+  </url>
   
-    
-    
-    <url>
-    
-      <loc>https://sc2682cornell.github.io/</loc>
-      <lastmod>2019-04-13T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
+  <url>
+    <loc>https://sc2682cornell.github.io/publication/</loc>
+    <lastmod>2019-04-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sc2682cornell.github.io/</loc>
+    <lastmod>2019-04-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sc2682cornell.github.io/authors/shay-galon/</loc>
+    <lastmod>2017-10-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sc2682cornell.github.io/authors/srilatha-manne/</loc>
+    <lastmod>2017-10-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sc2682cornell.github.io/authors/bingsheng-he/</loc>
+    <lastmod>2017-02-25T12:30:48-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sc2682cornell.github.io/authors/shunning-jiang/</loc>
+    <lastmod>2017-02-25T12:30:48-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sc2682cornell.github.io/authors/xueyan-tang/</loc>
+    <lastmod>2017-02-25T12:30:48-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sc2682cornell.github.io/authors/jeff-setter/</loc>
+    <lastmod>2017-02-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sc2682cornell.github.io/authors/xiaodong-wang/</loc>
+    <lastmod>2017-02-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sc2682cornell.github.io/authors/chao-li/</loc>
+    <lastmod>2015-07-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sc2682cornell.github.io/authors/li-jiang/</loc>
+    <lastmod>2015-07-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sc2682cornell.github.io/authors/naifeng-jing/</loc>
+    <lastmod>2015-07-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sc2682cornell.github.io/authors/xiaoyao-liang/</loc>
+    <lastmod>2015-07-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sc2682cornell.github.io/authors/shuang/</loc>
+  </url>
+  
+  <url>
+    <loc>https://sc2682cornell.github.io/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>https://sc2682cornell.github.io/post/</loc>
+  </url>
+  
+  <url>
+    <loc>https://sc2682cornell.github.io/talk/</loc>
+  </url>
+  
+  <url>
+    <loc>https://sc2682cornell.github.io/tags/</loc>
+  </url>
   
 </urlset>

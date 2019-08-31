@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Srilatha Manne | Welcome to Shuang Chen&#39;s Homepage</title>
+    <link>https://sc2682cornell.github.io/authors/srilatha-manne/</link>
+      <atom:link href="https://sc2682cornell.github.io/authors/srilatha-manne/index.xml" rel="self" type="application/rss+xml" />
+    <description>Srilatha Manne</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 01 Oct 2017 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://sc2682cornell.github.io/img/icon-192.png</url>
+      <title>Srilatha Manne</title>
+      <link>https://sc2682cornell.github.io/authors/srilatha-manne/</link>
+    </image>
+    
+    <item>
+      <title>Workload Characterization of Interactive Cloud Services on Big and Small Server Platforms</title>
+      <link>https://sc2682cornell.github.io/publication/iiswc17/</link>
+      <pubDate>Sun, 01 Oct 2017 00:00:00 +0000</pubDate>
+      <guid>https://sc2682cornell.github.io/publication/iiswc17/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

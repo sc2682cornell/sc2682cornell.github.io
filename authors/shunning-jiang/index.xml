@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Shunning Jiang | Welcome to Shuang Chen&#39;s Homepage</title>
+    <link>https://sc2682cornell.github.io/authors/shunning-jiang/</link>
+      <atom:link href="https://sc2682cornell.github.io/authors/shunning-jiang/index.xml" rel="self" type="application/rss+xml" />
+    <description>Shunning Jiang</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 25 Feb 2017 12:30:48 -0500</lastBuildDate>
+    <image>
+      <url>https://sc2682cornell.github.io/img/icon-192.png</url>
+      <title>Shunning Jiang</title>
+      <link>https://sc2682cornell.github.io/authors/shunning-jiang/</link>
+    </image>
+    
+    <item>
+      <title>A Study of Sorting Algorithms on Approximate Memory</title>
+      <link>https://sc2682cornell.github.io/publication/sort/</link>
+      <pubDate>Sat, 25 Feb 2017 12:30:48 -0500</pubDate>
+      <guid>https://sc2682cornell.github.io/publication/sort/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bank stealing for conflict mitigation in GPGPU Register File</title>
+      <link>https://sc2682cornell.github.io/publication/bank/</link>
+      <pubDate>Wed, 22 Jul 2015 00:00:00 +0000</pubDate>
+      <guid>https://sc2682cornell.github.io/publication/bank/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
