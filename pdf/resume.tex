@@ -1,0 +1,227 @@
+% LaTeX file for resume
+% This file uses the resume document class (res.cls)
+
+\documentclass{res}
+\usepackage{enumitem}
+%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
+%\usepackage{newcent}   % uses new century schoolbook postscript font
+\newsectionwidth{0pt}  % So the text is not indented under section headings
+\usepackage{fancyhdr}  % use this package to get a 2 line header
+\renewcommand{\headrulewidth}{0pt} % suppress line drawn by default by fancyhdr
+\setlength{\headheight}{24pt} % allow room for 2-line header
+\setlength{\headsep}{24pt}  % space between header and text
+\setlength{\headheight}{24pt} % allow room for 2-line header
+\pagestyle{fancy}     % set pagestyle for document
+\rhead{ {\it Shuang Chen}\\{\it p. \thepage} } % put text in header (right side)
+\cfoot{}                                     % the foot is empty
+\topmargin=-0.5in % start text higher on the page
+
+\begin{document}
+\thispagestyle{empty} % this page has no header
+\name{\Large Shuang Chen\\[20pt]}% the \\[12pt] adds a blank line after name
+
+
+\address{{\bf Email}\\
+   sc2682@cornell.edu\\ 
+   {\bf Website}\\
+   https://sc2682cornell.github.io }
+
+\address{
+   {\bf Research Interests}\\
+   Cloud Computing, Datacenter\\
+   Cache and Memory Systems, Processing-in-Memory \\
+   Computer Systems and Architecture }
+
+
+
+\begin{resume}
+
+%\vspace{0.2in}
+\section{\centerline{EDUCATION}}
+\vspace{-0.1in}
+\line(1,0){472}
+\vspace{0.0in}
+    {\bf Cornell University}, USA.  \hfill  May 2021 (expected) \\
+    \textit{Ph.D. Candidate in Computer Engineering}
+    \begin{enumerate}\itemsep0pt \parskip0pt \parsep0pt
+    \renewcommand{\labelenumi}{--}
+    \item Cumulative GPA: {\bf 3.95}/4.0
+    \item Committee: Jos{\'e} F. Mart{\'\i}nez (advisor), Christina Delimitrou, Robbert van Renesse
+    \item Thesis: Managing Interactive Cloud Services on Current and Future Server Platforms
+    \end{enumerate}
+        
+    {\bf Shanghai Jiao Tong University}, China  \hfill   July 2015 \\
+    \textit{B.S. in Computer Science, ACM Honored Class, Zhiyuan College}     
+    \begin{enumerate}\itemsep0pt \parskip0pt \parsep0pt
+    \renewcommand{\labelenumi}{--}
+    \item Cumulative GPA: {\bf 90.6}/100  \quad\quad
+      Major GPA: {\bf 91.5}/100 (top 3)
+     \item Admitted in 2010/08 waiving the college entrance exam
+
+    \end{enumerate}
+    
+%\vspace{0.05in}
+\section{\centerline{PROFESSIONAL EXPERIENCES}}
+\vspace{-0.1in}
+\line(1,0){472}
+\vspace{0.0in}    
+{\bf Graduate Research Assistant} at Cornell University, NY, USA.  \hfill   Aug 2015 $\sim$ Present \\
+\textit{$M^3$ Research Group, under Prof. Jos{\'e} F. Mart{\'\i}nez}
+    \vspace{0.0in}
+    \begin{itemize}\itemsep0pt \parskip0pt \parsep0pt
+        %\item Fine-grained partitioning of shared last-level caches in multicore systems 
+        %\item Workload characterization of interactive services on x86 and ARM servers
+        \item QoS-aware resource management of interactive services in datacenters
+        %\item QoS-aware power management of interactive services in multicore and heterogenous systems 
+        %\item QoS-aware resource management of interactive services using processing-in-memory
+    \end{itemize}
+    
+{ \bf Research Intern} at Facebook Inc., CA, USA.  \hfill   Summer 2018 \\
+ \textit{Capacity Engineering and Analysis team, under Dr. Banit Agrawal}
+    \vspace{0.0in}
+    \begin{itemize}\itemsep0pt \parskip0pt \parsep0pt
+        %\item {\em Manager: Banit Agrawal}\\
+        \item Resource monitoring and management of Facebook Containers 
+        \item GPU tracing and profiling of Facebook machine learning workloads
+    \end{itemize} 
+
+% \vspace{-0.2in}  
+{\bf Software Engineering Intern} at Cavium (now Marvell) Inc., CA, USA.  \hfill   Summer 2016 \\
+ \textit{Processor Architecture team, under Dr. Srilatha(Bobbie) Manne}
+    \begin{itemize}\itemsep0pt \parskip0pt \parsep0pt
+        %\item {\em Manager: Bobbie Manne}\\
+       % \item Implementing last-level cache in the internal processor simulator
+        \item Improving performance of last-level cache in Cavium ThunderX2
+        \item Performance analysis of interactive cloud applications in Cavium ThunderX2
+    \end{itemize}
+    
+    {\bf Undergraduate Research Assistant} at NTU, Singapore   \hfill  Aug 2014 $\sim$ Feb 2015 \\
+\textit{Xtra Computing Group, under Prof. Bingsheng He} 
+    \vspace{0.0in}
+    \begin{itemize}\itemsep0pt \parskip0pt \parsep0pt
+       \item Optimizing sorting algorithms using approximate NVRAM\\
+    \end{itemize}
+    
+     \vspace{-0.2in} 
+ {\bf Undergraduate Research Assistant} at Shanghai Jiao Tong University, China   \hfill   July 2013 $\sim$ June 2014
+ \textit{Advanced Computer Architecture Laboratory, under Prof. Xiaoyao Liang}
+     \vspace{0.0in}
+    \begin{itemize}\itemsep5pt \parskip0pt \parsep0pt
+        \item Optimization of GPGPU Register File
+    \end{itemize}
+
+    \vspace{0.1in}
+\section{\centerline{PUBLICATIONS}}
+\vspace{-0.1in}
+\line(1,0){472}
+\vspace{0in}
+\begin{itemize}[leftmargin=*]
+%\item $[$\textit{Under review}$]$\ {\bf Shuang Chen}, Yi Jiang, Christina Delimitrou, and Jos{\'e} F. Mart{\'\i}nez, ``PIMCloud: QoS-Aware Resource Management of Latency-Critical Applications in Datacenters with Processing-in-Memory,'' submitted to {\em the 26th ACM International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS)}, Apr 2021.
+
+%\item $[$\textit{Under review}$]$\ {\bf Shuang Chen}, Angela, Jin, Christina Delimitrou, and Jos{\'e} F. Mart{\'\i}nez, ``ReTail: QoS-Aware Power Management for Cloud Services with Request-Level Latency Prediction,'' submitted to {\em the 26th ACM International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS)}, Apr 2021.
+
+\item {\bf Shuang Chen}, Christina Delimitrou, and Jos{\'e} F. Mart{\'\i}nez, ``PARTIES: QoS-Aware Resource Partitioning for Multiple Interactive Services,'' in {\em the 24th ACM International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS)}, Apr 2019.
+
+\item {\bf Shuang Chen}, Shay Galon, Christina Delimitrou, Srilatha Manne, and Jos{\'e} F. Mart{\'\i}nez, ``Workload Characterization of Interactive Cloud Services on Big and Small Platforms,'' in {\em the 2017 IEEE International Symposium on Workload Characterization (IISWC)}, Oct 2017.
+
+\item Xiaodong Wang, {\bf Shuang Chen}, Jeff Setter and Jos{\'e} F. Mart{\'\i}nez, ``SWAP: Effective Fine-grain Management of Shared Last-level Caches with Minimum Hardware Support,'' in {\em the 23rd IEEE HPCA International Conference on High Performance Computer Architecture (HPCA)}, Feb 2017.
+
+\item  {\bf Shuang Chen}, Shunning Jiang, Bingsheng He and Xueyan Tang, ``A Study of Sorting Algorithms Using Approximate Storage,'' in {\em the 2016 ACM SIGMOD International Conference on Management of Data (SIGMOD)}, June 2016.
+
+\item Naifeng Jing, Shunning Jiang, {\bf Shuang Chen}, Jinjie Zhang, Li Jiang, Chao Li and Xiaoyao Liang, ``Bank Stealing for a Compact and Efficient Register File Architecture in GPGPU,'' in {\em IEEE Transactions on Very Large Scale Integration (VLSI) Systems}, 2016.
+
+\item Naifeng Jing, {\bf Shuang Chen}, Shunning Jiang, Li Jiang and Xiaoyao Liang, ``Bank Stealing for Conflict Mitigation in GPGPU Register File,'' in {\em the 2015 ACM/IEEE International Symposium on Low Power Electronics and Design (ISLPED)}, July 2015.
+
+\end{itemize}
+
+\section{\centerline{TALKS}}
+\vspace{-0.1in}
+\line(1,0){472}
+%{\bf PIMCloud: QoS-Aware Resource Management of Interactive Services in Datacenters with Processing-in-Memory}
+%\renewcommand{\labelenumi}{--}
+%\begin{enumerate}
+%\item Poster session at {\em SRC TECHCON}, Austin, Sept 9, 2019
+%\item Invited talk at {\em SRC JUMP e-Workshop}, Oct 15
+%\item Poster session at {\em SRC JUMP Center for Research in Intelligent Storage (CRISP) Annual Review}, Charlottesville, USA, Nov 5, 2019
+%\end{enumerate}
+\\{\bf PARTIES: QoS-Aware Resource Partitioning for Multiple Interactive Services}
+\renewcommand{\labelenumi}{--}
+\begin{enumerate}
+\item Invited talk at {\em Microsoft Research}, Redmond, Nov 29, 2017
+\item Conference talk at {\em the 24th ACM International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS)}, Providence, USA, Apr 15, 2019
+\item Research pitch competition and poster session at {\em Rising Stars in EECS Workshop}, University of Illinois at Urbana-Champaign, USA, Oct 30, 2019
+\end{enumerate}
+
+{\bf Workload Characterization of Interactive Cloud Services on Big and Small Platforms}
+\renewcommand{\labelenumi}{--}
+\begin{enumerate}
+\item Conference talk at {\em the 2017 IEEE International Symposium on Workload Characterization (IISWC)}, Seattle, USA, Oct 2, 2017
+\end{enumerate}
+
+{\bf A Study of Sorting Algorithms Using Approximate Storage}
+\renewcommand{\labelenumi}{--}
+\begin{enumerate}
+\item Conference talk at {\em the 2016 ACM SIGMOD International Conference on Management of Data (SIGMOD)}, San Francisco, USA, June 27, 2016
+\end{enumerate}
+
+\vspace{0.05in}
+\section{\centerline{HONORS AND AWARDS}}
+\vspace{-0.1in}
+\line(1,0){472}
+\vspace{0in}
+\begin{itemize}[leftmargin=*,itemsep=0in]
+   \item Selected for {\bf Rising Stars in EECS Workshop}, UIUC, USA \hfill 2019\\
+      -- {\bf Winner} of the Research Pitch Competition (ECE Track)
+    \item {\bf ECE Woman of the Month}, Cornell University, USA  \hfill Mar 2018
+    \item {\bf Cornell Graduate Fellowship}, Cornell University, USA  \hfill 2015
+    \item {\bf Outstanding Graduate} (top 1\%), Shanghai Jiao Tong University, China \hfill 2015 
+    \item {\bf Outstanding Graduate in Zhiyuan College} (top 12), Shanghai Jiao Tong University, China  \hfill 2015
+    \item {\bf Kai Yuan Scholarship} (top 20 in Zhiyuan College), Shanghai Jiao Tong University, China \hfill 2013 
+    \item ACM-ICPC (International Collegiate Programming Contest) Asia Regional
+        \begin{enumerate}\itemsep0pt \parskip0pt \parsep0pt \labelsep0pt \topsep0pt \partopsep0pt
+        \renewcommand{\labelenumi}{--}
+        \vspace{-0.08in}
+        \item {\bf 4th place} in Hsinchu Site \hfill 2011 
+        \item {\bf Gold medal} in Beijing Site \hfill 2011 
+        \end{enumerate}
+    \vspace{-0.05in}
+    \item {\bf Silver medal} (ranked the 64th) in National Olympiad in Informatics, China \hfill 2010 \\
+    	%-- Admitted to Shanghai Jiao Tong University waiving the college entrance exam
+    \end{itemize}
+
+
+
+\vspace{0.1in}
+\section{\centerline{TEACHING EXPERIENCES}}
+\vspace{-0.1in}
+\line(1,0){472}
+%\vspace{0.05in}
+\\{\bf Cornell University}, USA
+\begin{itemize}[itemsep=0in]
+\item {\bf Teaching Assistant} of Advanced Computer Architecture (CS5420/ECE5750)  \hfill  Fall 2020, Fall 2019
+%\item {\bf Teaching Assistant} of Advanced Computer Architecture (CS5420/ECE5750)  \hfill  Fall 2019
+\item {\bf Guest Lecturer} of Competition Programming and Problem Solving Seminar (CS5199) \hfill  Sept 2019
+\item {\bf Head Teaching Assistant} of Computer Systems Programming (ECE2400)  \hfill  Spring 2017
+\item {\bf Teaching Assistant} of Computer Architecture (CS4420/ECE4750)   \hfill  Fall 2016
+\end{itemize}
+
+{\bf Shanghai Jiao Tong University}, China  
+\begin{itemize}[itemsep=0in]
+\item {\bf Teaching Assistant} of C++ Programming (CS110)  \hfill  Fall 2012
+\end{itemize}
+
+\end{resume}
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
