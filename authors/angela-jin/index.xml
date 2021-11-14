@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Angela Jin | Welcome to Shuang Chen&#39;s Homepage</title>
+    <link>https://sc2682cornell.github.io/authors/angela-jin/</link>
+      <atom:link href="https://sc2682cornell.github.io/authors/angela-jin/index.xml" rel="self" type="application/rss+xml" />
+    <description>Angela Jin</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 13 Nov 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://sc2682cornell.github.io/img/icon-192.png</url>
+      <title>Angela Jin</title>
+      <link>https://sc2682cornell.github.io/authors/angela-jin/</link>
+    </image>
+    
+    <item>
+      <title>ReTail: Opting for Learning Simplicity to Enable QoS-Aware Power Management in the Cloud</title>
+      <link>https://sc2682cornell.github.io/publication/retail/</link>
+      <pubDate>Sat, 13 Nov 2021 00:00:00 +0000</pubDate>
+      <guid>https://sc2682cornell.github.io/publication/retail/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

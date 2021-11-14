@@ -5,7 +5,7 @@
     <link>https://sc2682cornell.github.io/authors/</link>
       <atom:link href="https://sc2682cornell.github.io/authors/index.xml" rel="self" type="application/rss+xml" />
     <description>Authors</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 13 Apr 2019 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 13 Nov 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://sc2682cornell.github.io/img/icon-192.png</url>
       <title>Authors</title>
@@ -15,15 +15,23 @@
     <item>
       <title>**Shuang Chen**</title>
       <link>https://sc2682cornell.github.io/authors/shuang-chen/</link>
-      <pubDate>Sat, 13 Apr 2019 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 13 Nov 2021 00:00:00 +0000</pubDate>
       <guid>https://sc2682cornell.github.io/authors/shuang-chen/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Angela Jin</title>
+      <link>https://sc2682cornell.github.io/authors/angela-jin/</link>
+      <pubDate>Sat, 13 Nov 2021 00:00:00 +0000</pubDate>
+      <guid>https://sc2682cornell.github.io/authors/angela-jin/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Christina Delimitrou</title>
       <link>https://sc2682cornell.github.io/authors/christina-delimitrou/</link>
-      <pubDate>Sat, 13 Apr 2019 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 13 Nov 2021 00:00:00 +0000</pubDate>
       <guid>https://sc2682cornell.github.io/authors/christina-delimitrou/</guid>
       <description></description>
     </item>
@@ -31,8 +39,16 @@
     <item>
       <title>José F. Martínez</title>
       <link>https://sc2682cornell.github.io/authors/jose-f.-martinez/</link>
-      <pubDate>Sat, 13 Apr 2019 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 13 Nov 2021 00:00:00 +0000</pubDate>
       <guid>https://sc2682cornell.github.io/authors/jose-f.-martinez/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Yi Jiang</title>
+      <link>https://sc2682cornell.github.io/authors/yi-jiang/</link>
+      <pubDate>Sat, 13 Nov 2021 00:00:00 +0000</pubDate>
+      <guid>https://sc2682cornell.github.io/authors/yi-jiang/</guid>
       <description></description>
     </item>
     
@@ -129,7 +145,17 @@
       <link>https://sc2682cornell.github.io/authors/shuang/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://sc2682cornell.github.io/authors/shuang/</guid>
-      <description>&lt;p&gt;bio: Hello, my name is Shuang Chen (陈爽). I am a final-year Ph.D. candidate in the &lt;a href=&#34;http://www.csl.cornell.edu&#34; target=&#34;_blank&#34;&gt;Computer Systems Lab&lt;/a&gt; at Cornell University, advised by &lt;a href=&#34;http://martinez.csl.cornell.edu&#34; target=&#34;_blank&#34;&gt;Prof. José F. Martínez&lt;/a&gt;. My thesis is about hardware resource management of interactive services in datacenters, especially during service colocation and/or emerging hardware technologies.&lt;/p&gt;
+      <description>&lt;p&gt;Hello, I am Shuang Chen (陈爽). I earned my Ph.D. in &lt;a
+href=&#34;http://www.csl.cornell.edu&#34; target=&#34;_blank&#34;&gt;Computer Engineering&lt;/a&gt;
+at Cornell University, under the supervision of &lt;a
+href=&#34;http://martinez.csl.cornell.edu&#34; target=&#34;_blank&#34;&gt;Prof. José F.
+Martínez&lt;/a&gt; and extensive collaboration with &lt;a
+href=&#34;https://www.csl.cornell.edu/~delimitrou/&#34; target=&#34;_blank&#34;&gt;Prof. Christina
+Delimitrou&lt;/a&gt;.  My thesis is about QoS-aware resource management of interactive services in datacenters.&lt;/p&gt;
+
+&lt;p&gt;I will join &lt;a
+href=&#34;https://www.huaweicloud.com/intl/en-us/&#34; target=&#34;_blank&#34;&gt;Huawei
+Cloud&lt;/a&gt; as a cloud architect in Aug 2021.&lt;/p&gt;
 </description>
     </item>
     
