@@ -28,10 +28,10 @@
   
     
   
-  <meta name="description" content="Many cloud services have QoS requirements, with most requests needing to complete within a given latency constraint. Recently, researchers have begun to investigate whether it is possible to meet QoS for these latency-critical applications while attempting to save power on a per-request basis. Existing work shows that one can indeed hand-tune a request latency predictor offline for a particular cloud application, and consult it at runtime to modulate CPU voltage and frequency, resulting in substantial power savings. In this paper, we propose ReTail, an automated and general solution for request-level power management of latency-critical services with QoS constraints. We present a systematic process to select the features of any given application that best correlate with its request latency. ReTail uses these features to predict latency, and adjust a CPU&#39;s power consumption. ReTail&#39;s predictor is trained fully at runtime. We show that unlike previous findings, simple techniques perform better than complex machine learning models, when using the right input application features. For a web search engine, ReTail outperforms prior mechanisms based on complex hand-tuned predictors for that application domain. Furthermore, ReTail&#39;s systematic approach also yields superior power savings across a diverse set of cloud applications.">
+  <meta name="description" content="Public clouds typically adopt (1) multi-tenancy to increase server utilization; (2) virtualization to provide isolation between different tenants; (3) oversubscription of resources to further increase resource efficiency. However, prior work all focuses on optimizing one or two elements, and fails to considerately bring QoS-aware multi-tenancy, virtualization and resource oversubscription together. We find three challenges when the three elements coexist. First, the double scheduling symptoms are $10	imes$ worse with latency-critical (LC) workloads which are comprised of numerous sub-millisecond tasks and are significantly different from conventional batch applications. Second, inner-VM resource contention also exists between threads of the same VM when running LC applications, calling for inner-VM core isolation. Third, no application-level performance metrics can be obtained by the host to guide resource management in realistic public clouds. To address these challenges, we propose a QoS-aware core manager dubbed UFO to specifically support co-location of multiple LC workloads in virtualized and oversubscribed public cloud environments. UFO solves the three above-mentioned challenges, by (1) coordinating the guest and host CPU cores (vCPU-pCPU coordination), and (2) doing fine-grained inner-VM resource isolation, to push core management in realistic public clouds to the extreme. Compared with the state-of-the-art core managers, it saves up to 50% of physical cores under the same co-location scenario, and is able to cover up to 5.7x more co-location scenarios under the same amount of core resources.">
 
   
-  <link rel="alternate" hreflang="en-us" href="https://sc2682cornell.github.io/publication/retail/">
+  <link rel="alternate" hreflang="en-us" href="https://sc2682cornell.github.io/publication/ufo/">
 
   
 
@@ -88,7 +88,7 @@
   <link rel="icon" type="image/png" href="/img/icon-32.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="https://sc2682cornell.github.io/publication/retail/">
+  <link rel="canonical" href="https://sc2682cornell.github.io/publication/ufo/">
 
   
   
@@ -101,15 +101,15 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="Welcome to Shuang Chen&#39;s Homepage">
-  <meta property="og:url" content="https://sc2682cornell.github.io/publication/retail/">
-  <meta property="og:title" content="ReTail: Opting for Learning Simplicity to Enable QoS-Aware Power Management in the Cloud | Welcome to Shuang Chen&#39;s Homepage">
-  <meta property="og:description" content="Many cloud services have QoS requirements, with most requests needing to complete within a given latency constraint. Recently, researchers have begun to investigate whether it is possible to meet QoS for these latency-critical applications while attempting to save power on a per-request basis. Existing work shows that one can indeed hand-tune a request latency predictor offline for a particular cloud application, and consult it at runtime to modulate CPU voltage and frequency, resulting in substantial power savings. In this paper, we propose ReTail, an automated and general solution for request-level power management of latency-critical services with QoS constraints. We present a systematic process to select the features of any given application that best correlate with its request latency. ReTail uses these features to predict latency, and adjust a CPU&#39;s power consumption. ReTail&#39;s predictor is trained fully at runtime. We show that unlike previous findings, simple techniques perform better than complex machine learning models, when using the right input application features. For a web search engine, ReTail outperforms prior mechanisms based on complex hand-tuned predictors for that application domain. Furthermore, ReTail&#39;s systematic approach also yields superior power savings across a diverse set of cloud applications."><meta property="og:image" content="https://sc2682cornell.github.io/img/icon-192.png">
+  <meta property="og:url" content="https://sc2682cornell.github.io/publication/ufo/">
+  <meta property="og:title" content="UFO: The Ultimate QoS-Aware CPU Core Management for Virtualized and Oversubscribed Public Cloud | Welcome to Shuang Chen&#39;s Homepage">
+  <meta property="og:description" content="Public clouds typically adopt (1) multi-tenancy to increase server utilization; (2) virtualization to provide isolation between different tenants; (3) oversubscription of resources to further increase resource efficiency. However, prior work all focuses on optimizing one or two elements, and fails to considerately bring QoS-aware multi-tenancy, virtualization and resource oversubscription together. We find three challenges when the three elements coexist. First, the double scheduling symptoms are $10	imes$ worse with latency-critical (LC) workloads which are comprised of numerous sub-millisecond tasks and are significantly different from conventional batch applications. Second, inner-VM resource contention also exists between threads of the same VM when running LC applications, calling for inner-VM core isolation. Third, no application-level performance metrics can be obtained by the host to guide resource management in realistic public clouds. To address these challenges, we propose a QoS-aware core manager dubbed UFO to specifically support co-location of multiple LC workloads in virtualized and oversubscribed public cloud environments. UFO solves the three above-mentioned challenges, by (1) coordinating the guest and host CPU cores (vCPU-pCPU coordination), and (2) doing fine-grained inner-VM resource isolation, to push core management in realistic public clouds to the extreme. Compared with the state-of-the-art core managers, it saves up to 50% of physical cores under the same co-location scenario, and is able to cover up to 5.7x more co-location scenarios under the same amount of core resources."><meta property="og:image" content="https://sc2682cornell.github.io/img/icon-192.png">
   <meta property="twitter:image" content="https://sc2682cornell.github.io/img/icon-192.png"><meta property="og:locale" content="en-us">
   
     
-      <meta property="article:published_time" content="2022-04-01T00:00:00&#43;00:00">
+      <meta property="article:published_time" content="2024-02-01T00:00:00&#43;00:00">
     
-    <meta property="article:modified_time" content="2022-04-01T00:00:00&#43;00:00">
+    <meta property="article:modified_time" content="2024-02-01T00:00:00&#43;00:00">
   
 
   
@@ -121,7 +121,7 @@
 
 
 
-  <title>ReTail: Opting for Learning Simplicity to Enable QoS-Aware Power Management in the Cloud | Welcome to Shuang Chen&#39;s Homepage</title>
+  <title>UFO: The Ultimate QoS-Aware CPU Core Management for Virtualized and Oversubscribed Public Cloud | Welcome to Shuang Chen&#39;s Homepage</title>
 
 </head>
 
@@ -374,7 +374,7 @@
   
   
 <div class="article-container pt-3">
-  <h1 itemprop="name">ReTail: Opting for Learning Simplicity to Enable QoS-Aware Power Management in the Cloud</h1>
+  <h1 itemprop="name">UFO: The Ultimate QoS-Aware CPU Core Management for Virtualized and Oversubscribed Public Cloud</h1>
 
   
 
@@ -383,8 +383,8 @@
 
 
 
-<meta content="2022-04-01 00:00:00 &#43;0000 UTC" itemprop="datePublished">
-<meta content="2022-04-01 00:00:00 &#43;0000 UTC" itemprop="dateModified">
+<meta content="2024-02-01 00:00:00 &#43;0000 UTC" itemprop="datePublished">
+<meta content="2024-02-01 00:00:00 &#43;0000 UTC" itemprop="dateModified">
 
 <div class="article-metadata">
 
@@ -397,7 +397,7 @@
 
 
 
-  <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/shuang-chen/"><strong>Shuang Chen</strong></a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/angela-jin/">Angela Jin</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/christina-delimitrou/">Christina Delimitrou</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/jose-f.-martinez/">José F. Martínez</a></span>
+  <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/yajuan-peng/">*Yajuan Peng</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/shuang-chenequal-contribution/">*<strong>Shuang Chen</strong>(*equal contribution)</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/yi-zhao/">Yi Zhao</a></span>, <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/zhibin-yu/">Zhibin Yu</a></span>
 
   </div>
   
@@ -409,7 +409,7 @@
     
       
     
-    <time>April 2022</time>
+    <time>February 2024</time>
   </span>
   
 
@@ -437,7 +437,7 @@
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=https://sc2682cornell.github.io/publication/retail/&amp;text=ReTail:%20Opting%20for%20Learning%20Simplicity%20to%20Enable%20QoS-Aware%20Power%20Management%20in%20the%20Cloud" target="_blank" rel="noopener" class="share-btn-twitter">
+        <a href="https://twitter.com/intent/tweet?url=https://sc2682cornell.github.io/publication/ufo/&amp;text=UFO:%20The%20Ultimate%20QoS-Aware%20CPU%20Core%20Management%20for%20Virtualized%20and%20Oversubscribed%20Public%20Cloud" target="_blank" rel="noopener" class="share-btn-twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -450,7 +450,7 @@
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=https://sc2682cornell.github.io/publication/retail/&amp;t=ReTail:%20Opting%20for%20Learning%20Simplicity%20to%20Enable%20QoS-Aware%20Power%20Management%20in%20the%20Cloud" target="_blank" rel="noopener" class="share-btn-facebook">
+        <a href="https://www.facebook.com/sharer.php?u=https://sc2682cornell.github.io/publication/ufo/&amp;t=UFO:%20The%20Ultimate%20QoS-Aware%20CPU%20Core%20Management%20for%20Virtualized%20and%20Oversubscribed%20Public%20Cloud" target="_blank" rel="noopener" class="share-btn-facebook">
           <i class="fab fa-facebook-f"></i>
         </a>
       </li>
@@ -463,7 +463,7 @@
       
       
       <li>
-        <a href="mailto:?subject=ReTail:%20Opting%20for%20Learning%20Simplicity%20to%20Enable%20QoS-Aware%20Power%20Management%20in%20the%20Cloud&amp;body=https://sc2682cornell.github.io/publication/retail/" target="_blank" rel="noopener" class="share-btn-email">
+        <a href="mailto:?subject=UFO:%20The%20Ultimate%20QoS-Aware%20CPU%20Core%20Management%20for%20Virtualized%20and%20Oversubscribed%20Public%20Cloud&amp;body=https://sc2682cornell.github.io/publication/ufo/" target="_blank" rel="noopener" class="share-btn-email">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -476,7 +476,7 @@
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=https://sc2682cornell.github.io/publication/retail/&amp;title=ReTail:%20Opting%20for%20Learning%20Simplicity%20to%20Enable%20QoS-Aware%20Power%20Management%20in%20the%20Cloud" target="_blank" rel="noopener" class="share-btn-linkedin">
+        <a href="https://www.linkedin.com/shareArticle?url=https://sc2682cornell.github.io/publication/ufo/&amp;title=UFO:%20The%20Ultimate%20QoS-Aware%20CPU%20Core%20Management%20for%20Virtualized%20and%20Oversubscribed%20Public%20Cloud" target="_blank" rel="noopener" class="share-btn-linkedin">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -489,7 +489,7 @@
       
       
       <li>
-        <a href="https://web.whatsapp.com/send?text=ReTail:%20Opting%20for%20Learning%20Simplicity%20to%20Enable%20QoS-Aware%20Power%20Management%20in%20the%20Cloud%20https://sc2682cornell.github.io/publication/retail/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+        <a href="https://web.whatsapp.com/send?text=UFO:%20The%20Ultimate%20QoS-Aware%20CPU%20Core%20Management%20for%20Virtualized%20and%20Oversubscribed%20Public%20Cloud%20https://sc2682cornell.github.io/publication/ufo/" target="_blank" rel="noopener" class="share-btn-whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -502,7 +502,7 @@
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=https://sc2682cornell.github.io/publication/retail/&amp;title=ReTail:%20Opting%20for%20Learning%20Simplicity%20to%20Enable%20QoS-Aware%20Power%20Management%20in%20the%20Cloud" target="_blank" rel="noopener" class="share-btn-weibo">
+        <a href="https://service.weibo.com/share/share.php?url=https://sc2682cornell.github.io/publication/ufo/&amp;title=UFO:%20The%20Ultimate%20QoS-Aware%20CPU%20Core%20Management%20for%20Virtualized%20and%20Oversubscribed%20Public%20Cloud" target="_blank" rel="noopener" class="share-btn-weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -529,61 +529,6 @@
 
 
 
-<div class="btn-links mb-3">
-  
-  
-
-
-
-
-
-
-
-
-  
-    
-  
-
-
-
-<a class="btn btn-outline-primary my-1 mr-1" href="/pdf/ReTail.pdf" target="_blank" rel="noopener">
-  PDF
-</a>
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-    
-  
-<a class="btn btn-outline-primary my-1 mr-1" href="/ppt/ReTail.pdf" target="_blank" rel="noopener">
-  Slides
-</a>
-
-
-
-  
-  
-    
-  
-<a class="btn btn-outline-primary my-1 mr-1" href="https://www.bilibili.com/video/bv1hR4y1N7V1" target="_blank" rel="noopener">
-  Video
-</a>
-
-
-
-
-
-</div>
-
 
   
 </div>
@@ -594,7 +539,7 @@
 
     
     <h3>Abstract</h3>
-    <p class="pub-abstract" itemprop="text">Many cloud services have QoS requirements, with most requests needing to complete within a given latency constraint. Recently, researchers have begun to investigate whether it is possible to meet QoS for these latency-critical applications while attempting to save power on a per-request basis. Existing work shows that one can indeed hand-tune a request latency predictor offline for a particular cloud application, and consult it at runtime to modulate CPU voltage and frequency, resulting in substantial power savings. In this paper, we propose ReTail, an automated and general solution for request-level power management of latency-critical services with QoS constraints. We present a systematic process to select the features of any given application that best correlate with its request latency. ReTail uses these features to predict latency, and adjust a CPU&rsquo;s power consumption. ReTail&rsquo;s predictor is trained fully at runtime. We show that unlike previous findings, simple techniques perform better than complex machine learning models, when using the right input application features. For a web search engine, ReTail outperforms prior mechanisms based on complex hand-tuned predictors for that application domain. Furthermore, ReTail&rsquo;s systematic approach also yields superior power savings across a diverse set of cloud applications.</p>
+    <p class="pub-abstract" itemprop="text">Public clouds typically adopt (1) multi-tenancy to increase server utilization; (2) virtualization to provide isolation between different tenants; (3) oversubscription of resources to further increase resource efficiency. However, prior work all focuses on optimizing one or two elements, and fails to considerately bring QoS-aware multi-tenancy, virtualization and resource oversubscription together. We find three challenges when the three elements coexist. First, the double scheduling symptoms are $10   imes$ worse with latency-critical (LC) workloads which are comprised of numerous sub-millisecond tasks and are significantly different from conventional batch applications. Second, inner-VM resource contention also exists between threads of the same VM when running LC applications, calling for inner-VM core isolation. Third, no application-level performance metrics can be obtained by the host to guide resource management in realistic public clouds. To address these challenges, we propose a QoS-aware core manager dubbed UFO to specifically support co-location of multiple LC workloads in virtualized and oversubscribed public cloud environments. UFO solves the three above-mentioned challenges, by (1) coordinating the guest and host CPU cores (vCPU-pCPU coordination), and (2) doing fine-grained inner-VM resource isolation, to push core management in realistic public clouds to the extreme. Compared with the state-of-the-art core managers, it saves up to 50% of physical cores under the same co-location scenario, and is able to cover up to 5.7x more co-location scenarios under the same amount of core resources.</p>
     
 
     
@@ -624,7 +569,7 @@
       <div class="col-md-10">
         <div class="row">
           <div class="col-12 col-md-3 pub-row-heading">Publication</div>
-          <div class="col-12 col-md-9">In <em>the 28th IEEE International Symposium on High-Performance Computer Architecture (HPCA 2022)</em>, IEEE.</div>
+          <div class="col-12 col-md-9">In <em>the 21st USENIX Symposium on Networked Systems Design and Implementation (NSDI &lsquo;24)</em>, USENIX.</div>
         </div>
       </div>
       <div class="col-md-1"></div>
@@ -666,7 +611,7 @@
     
 
     <div class="media-body">
-      <h5 class="card-title" itemprop="name"><a href="/authors/shuang-chen/"></a></h5>
+      <h5 class="card-title" itemprop="name"><a href="/authors/yajuan-peng/"></a></h5>
       
       
       <ul class="network-icon" aria-hidden="true">

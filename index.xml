@@ -5,12 +5,20 @@
     <link>https://sc2682cornell.github.io/</link>
       <atom:link href="https://sc2682cornell.github.io/index.xml" rel="self" type="application/rss+xml" />
     <description>Welcome to Shuang Chen&#39;s Homepage</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 01 Apr 2022 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 01 Feb 2024 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://sc2682cornell.github.io/img/icon-192.png</url>
       <title>Welcome to Shuang Chen&#39;s Homepage</title>
       <link>https://sc2682cornell.github.io/</link>
     </image>
+    
+    <item>
+      <title>UFO: The Ultimate QoS-Aware CPU Core Management for Virtualized and Oversubscribed Public Cloud</title>
+      <link>https://sc2682cornell.github.io/publication/ufo/</link>
+      <pubDate>Thu, 01 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://sc2682cornell.github.io/publication/ufo/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>ReTail: Opting for Learning Simplicity to Enable QoS-Aware Power Management in the Cloud</title>
