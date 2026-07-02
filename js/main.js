@@ -1,15 +1,29 @@
 /* ============================================
-   Populates the page from inline markdown content.
-   Edit the <script type="text/markdown"> block
-   in index.html to update all site content.
+   Populates the page from content.md (fetched at runtime).
+   Edit content.md to update the site.
    ============================================ */
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', async () => {
 
-  /* ---------- Read markdown from script tag ---------- */
-  const script = document.getElementById('content-data');
-  if (!script) return;
-  const raw = script.textContent.trim();
+  /* ---------- Fetch content.md ---------- */
+  let raw;
+  try {
+    const res = await fetch('content.md');
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    raw = await res.text();
+    const lastMod = res.headers.get('Last-Modified');
+    if (lastMod) {
+      document.getElementById('footer-update').textContent =
+        'Last update: ' + new Date(lastMod).toLocaleDateString('en-US', {
+          year: 'numeric', month: 'long', day: 'numeric'
+        });
+    }
+  } catch (e) {
+    // Fallback: read from inline script tag (for local file:// testing)
+    const script = document.getElementById('content-data');
+    if (!script) return;
+    raw = script.textContent.trim();
+  }
 
   /* ---------- Parse YAML frontmatter ---------- */
   const parts = raw.split('---');
@@ -42,7 +56,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /* ---------- Populate About (photo, name, title, links) ---------- */
 
-  // Photo
   const photoEl = document.getElementById('about-photo');
   if (fm.photo) {
     photoEl.src = fm.photo;
@@ -52,11 +65,9 @@ document.addEventListener('DOMContentLoaded', () => {
     photoEl.style.display = 'none';
   }
 
-  // Name & title
   document.getElementById('about-name').textContent = fm.name || '';
   document.getElementById('about-title').textContent = fm.title || '';
 
-  // Inline links under portrait: Scholar · Email · CV
   const linksEl = document.getElementById('about-links');
   const linkDefs = [];
   if (fm.email)   linkDefs.push(['Email', 'mailto:' + fm.email]);
@@ -66,11 +77,9 @@ document.addEventListener('DOMContentLoaded', () => {
     `<a href="${url}" target="_blank">${label}</a>`
   ).join('');
 
-  // Nav CV link (hidden if no element)
   const navCv = document.getElementById('nav-cv');
   if (navCv && fm.cv) navCv.href = fm.cv;
 
-  // Bio text (before ##) vs. sub-sections (Education, Research Interests)
   const aboutRaw = sections['about'] || '';
   const subIdx = aboutRaw.indexOf('\n## ');
   const bioText = subIdx >= 0 ? aboutRaw.slice(0, subIdx).trim() : aboutRaw;
@@ -105,7 +114,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Highlight active nav link on scroll
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -119,7 +127,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   document.querySelectorAll('.section[id]').forEach(s => observer.observe(s));
 
-  // Close nav on outside click
   document.addEventListener('click', e => {
     if (!e.target.closest('.nav') && nav.classList.contains('active')) {
       nav.classList.remove('active');
