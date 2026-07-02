@@ -28,7 +28,7 @@ I am dedicated to fully unlocking the potential of AI chips and hardware archite
 
 - **ASAP: A Disaggregated and Asynchronous Inference System for MoE Prefill**  
   *Weiwei Chen, Shuang Chen^, Lele Li, Qiang Hu, Han Li, Xin Ye, Ming Yan, Zhibin Yu* — **on Arxiv**   
-  [link](https://arxiv.org/abs/2606.22541)
+  [link](https://arxiv.org/abs/2606.22541) · [PDF](assets/files/asap.pdf)
 
 - **Harli: SLO-Aware Co-location of LLM Inference and PEFT-based Finetuning on Model-as-a-Service Platforms.**  
   *Ao Xu, Han Zhao, Weihao Cui, Quan Chen, Yukang Chen, Shulai Zhang, Shuang Chen, Jiemin Jiang, Zhibin Yu, Minyi Guo* — **on Arxiv**   
@@ -40,7 +40,6 @@ I am dedicated to fully unlocking the potential of AI chips and hardware archite
 
 - **ShuffleInfer: Disaggregate LLM Inference for Mixed Downstream Workloads**  
   *Cunchen Hu, Heyang Huang, Liangliang Xu, Xusheng Chen, Chenxi Wang, Jiang Xu, Shuang Chen, Hao Feng, Huawei Cloud; Sa Wang, Yungang Bao, Ninghui Sun, Yizhou Shan* — **TACO 2025**   
-  [PDF](assets/files/asap.pdf)
 
 - **UFO: The Ultimate QoS-Aware CPU Core Management for Virtualized and Oversubscribed Public Cloud**  
   *Yajuan Peng\*, Shuang Chen\* (equal contribution), Yi Zhao, Zhibin Yu* — **NSDI 2024**  
@@ -52,34 +51,34 @@ I am dedicated to fully unlocking the potential of AI chips and hardware archite
 
 - **PIMCloud: QoS-Aware Resource Management of Latency-Critical Applications in Clouds with Processing-in-Memory**  
   *Shuang Chen, Yi Jiang, Christina Delimitrou, José F. Martínez* — **HPCA 2022**  
-  [PDF](assets/files/pimcloud.pdf) · [Slides](assets/ppt/pimcloud.pdf) · [Video](https://www.bilibili.com/video/BV1Dr4y1H7th/?vd_source=63fbd8bfe569f37ea442b45de7198b1b)
+  [PDF](assets/files/PIMCloud.pdf) · [Slides](assets/ppt/PIMCloud.pdf) · [Video](https://www.bilibili.com/video/BV1Dr4y1H7th/?vd_source=63fbd8bfe569f37ea442b45de7198b1b)
 
 - **PARTIES: QoS-Aware Resource Partitioning for Multiple Interactive Services**  
   *Shuang Chen, Christina Delimitrou, José F. Martínez* — **ASPLOS 2019**  
-  [PDF](assets/pdf/parties.pdf) · [Code](https://github.com/sc2682cornell/PARTIES) · [Slides](assets/ppt/parties.pdf) · [Video](https://www.youtube.com/watch?v=t35sSEzSkiI&feature=youtu.be&themeRefresh=1)
+  [PDF](assets/files/PARTIES.pdf) · [Code](https://github.com/sc2682cornell/PARTIES) · [Slides](assets/ppt/PARTIES.pdf) · [Video](https://www.youtube.com/watch?v=t35sSEzSkiI&feature=youtu.be&themeRefresh=1)
 
 - **Workload Characterization of Interactive Cloud Services on Big and Small Server Platforms**  
   *Shuang Chen, Shay GalOn, Christina Delimitrou, Srilatha Manne, José F. Martínez* — **IISWC 2017**  
-  [PDF](assets/pdf/iiswc17.pdf) · [Slides](assets/ppt/iiswc17.pdf)
+  [PDF](assets/files/iiswc17.pdf) · [Slides](assets/ppt/IISWC.pdf)
 
 - **SWAP: Effective Fine-grain Management of Shared Last-level Caches with Minimum Hardware Support**  
   *Xiaodong Wang, Shuang Chen, Jeff Setter, José F. Martínez* — **HPCA 2017**  
-  [PDF](assets/pdf/swap.pdf) · [Slides](assets/ppt/swap.pdf)
+  [PDF](assets/files/SWAP.pdf) · [Slides](assets/ppt/SWAP.pdf)
 
 - **A Study of Sorting Algorithms on Approximate Memory**  
   *Shuang Chen, Shunning Jiang, Bingsheng He, Xueyan Tang* — **SIGMOD 2016**  
-  [PDF](assets/pdf/sigmod16.pdf) · [Slides](assets/ppt/sigmod16.pdf)
+  [PDF](assets/files/sort.pdf) · [Slides](assets/ppt/SIGMOD.pdf)
 
 - **Bank Stealing for Conflict Mitigation in GPGPU Register File**  
   *Naifeng Jing, Shuang Chen, Shunning Jiang, Li Jiang, Chao Li, Xiaoyao Liang* — **ISLPED 2015**  
-  [PDF](assets/pdf/islped15.pdf)
+  [PDF](assets/files/islped15.pdf)
 
 # Experience
 
 
 ## Industry
 
-- **Technical Expert (LLM Inference Engine)**, Bytedance Seed, Aug 2026 – Present  
+- **Technical Expert (LLM Inference Engine)**, Bytedance Seed, Apr 2026 – Present  
 
 - **Technical Expert (Cloud SW/HW Co-Design)**, Huawei, Aug 2021 – Apr 2026  
 
