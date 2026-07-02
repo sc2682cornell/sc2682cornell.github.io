@@ -1,29 +1,15 @@
 /* ============================================
-   Populates the page from content.md (fetched at runtime).
-   Edit content.md to update the site.
+   Populates the page from inline markdown content.
+   Run `node build.js` to sync content.md into
+   index.html before deploying.
    ============================================ */
 
-document.addEventListener('DOMContentLoaded', async () => {
+document.addEventListener('DOMContentLoaded', () => {
 
-  /* ---------- Fetch content.md ---------- */
-  let raw;
-  try {
-    const res = await fetch('content.md');
-    if (!res.ok) throw new Error('HTTP ' + res.status);
-    raw = await res.text();
-    const lastMod = res.headers.get('Last-Modified');
-    if (lastMod) {
-      document.getElementById('footer-update').textContent =
-        'Last update: ' + new Date(lastMod).toLocaleDateString('en-US', {
-          year: 'numeric', month: 'long', day: 'numeric'
-        });
-    }
-  } catch (e) {
-    // Fallback: read from inline script tag (for local file:// testing)
-    const script = document.getElementById('content-data');
-    if (!script) return;
-    raw = script.textContent.trim();
-  }
+  /* ---------- Read markdown from script tag ---------- */
+  const script = document.getElementById('content-data');
+  if (!script) return;
+  const raw = script.textContent.trim();
 
   /* ---------- Parse YAML frontmatter ---------- */
   const parts = raw.split('---');
