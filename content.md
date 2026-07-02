@@ -39,7 +39,7 @@ I am dedicated to fully unlocking the potential of AI chips and hardware archite
   [PDF](assets/files/barbell.pdf)
 
 - **ShuffleInfer: Disaggregate LLM Inference for Mixed Downstream Workloads**  
-  *Cunchen Hu, Heyang Huang, Liangliang Xu, Xusheng Chen, Chenxi Wang, Jiang Xu, Shuang Chen, Hao Feng, Huawei Cloud; Sa Wang, Yungang Bao, Ninghui Sun, Yizhou Shan* — **TACO 2025**   
+  *Cunchen Hu, Heyang Huang, Liangliang Xu, Xusheng Chen, Chenxi Wang, Jiang Xu, Shuang Chen, Hao Feng, Sa Wang, Yungang Bao, Ninghui Sun, Yizhou Shan* — **TACO 2025**   
 
 - **UFO: The Ultimate QoS-Aware CPU Core Management for Virtualized and Oversubscribed Public Cloud**  
   *Yajuan Peng\*, Shuang Chen\* (equal contribution), Yi Zhao, Zhibin Yu* — **NSDI 2024**  
@@ -71,7 +71,7 @@ I am dedicated to fully unlocking the potential of AI chips and hardware archite
 
 - **Bank Stealing for Conflict Mitigation in GPGPU Register File**  
   *Naifeng Jing, Shuang Chen, Shunning Jiang, Li Jiang, Chao Li, Xiaoyao Liang* — **ISLPED 2015**  
-  [PDF](assets/files/islped15.pdf)
+  [PDF](assets/files/bank.pdf)
 
 # Experience
 
