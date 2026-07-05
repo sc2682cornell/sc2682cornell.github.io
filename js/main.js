@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const linksEl = document.getElementById('about-links');
   const linkDefs = [];
   if (fm.email)   linkDefs.push(['Email', 'mailto:' + fm.email]);
-  // if (fm.cv)      linkDefs.push(['CV', fm.cv]);
+  if (fm.cv)      linkDefs.push(['CV', fm.cv]);
   if (fm.scholar) linkDefs.push(['Google Scholar', fm.scholar]);
   linksEl.innerHTML = linkDefs.map(([label, url]) =>
     `<a href="${url}" target="_blank">${label}</a>`
